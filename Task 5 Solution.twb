@@ -1,0 +1,4565 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0913.2109                               -->
+<workbook source-build='2020.2.6 (20202.20.0913.2109)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='matches' inline='true' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='matches' name='textscan.1vfqz2j0apqv3b1ga4aev0idpulb'>
+            <connection class='textscan' directory='C:/Users/MOHIT/Desktop/TSF-GRIPS Internship/Task 5' filename='matches.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1vfqz2j0apqv3b1ga4aev0idpulb' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='match_id' ordinal='0' />
+            <column datatype='string' name='inning' ordinal='1' />
+            <column datatype='string' name='batting_team' ordinal='2' />
+            <column datatype='string' name='bowling_team' ordinal='3' />
+            <column datatype='integer' name='over' ordinal='4' />
+            <column datatype='integer' name='ball' ordinal='5' />
+            <column datatype='string' name='batsman' ordinal='6' />
+            <column datatype='string' name='non_striker' ordinal='7' />
+            <column datatype='string' name='bowler' ordinal='8' />
+            <column datatype='integer' name='is_super_over' ordinal='9' />
+            <column datatype='integer' name='wide_runs' ordinal='10' />
+            <column datatype='integer' name='bye_runs' ordinal='11' />
+            <column datatype='integer' name='legbye_runs' ordinal='12' />
+            <column datatype='integer' name='noball_runs' ordinal='13' />
+            <column datatype='integer' name='penalty_runs' ordinal='14' />
+            <column datatype='integer' name='batsman_runs' ordinal='15' />
+            <column datatype='integer' name='extra_runs' ordinal='16' />
+            <column datatype='integer' name='total_runs' ordinal='17' />
+            <column datatype='string' name='player_dismissed' ordinal='18' />
+            <column datatype='string' name='dismissal_kind' ordinal='19' />
+            <column datatype='string' name='fielder' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1vfqz2j0apqv3b1ga4aev0idpulb' name='matches.csv' table='[matches#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='season' ordinal='1' />
+              <column datatype='string' name='city' ordinal='2' />
+              <column datatype='date' date-parse-format='MM/dd/yyyy|#|#|dd/yy/MMMMHH' name='date' ordinal='3' />
+              <column datatype='string' name='team1' ordinal='4' />
+              <column datatype='string' name='team2' ordinal='5' />
+              <column datatype='string' name='toss_winner' ordinal='6' />
+              <column datatype='string' name='toss_decision' ordinal='7' />
+              <column datatype='string' name='result' ordinal='8' />
+              <column datatype='integer' name='dl_applied' ordinal='9' />
+              <column datatype='string' name='winner' ordinal='10' />
+              <column datatype='integer' name='win_by_runs' ordinal='11' />
+              <column datatype='integer' name='win_by_wickets' ordinal='12' />
+              <column datatype='string' name='player_of_match' ordinal='13' />
+              <column datatype='string' name='venue' ordinal='14' />
+              <column datatype='string' name='umpire1' ordinal='15' />
+              <column datatype='string' name='umpire2' ordinal='16' />
+              <column datatype='string' name='umpire3' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1vfqz2j0apqv3b1ga4aev0idpulb' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='match_id' ordinal='0' />
+              <column datatype='string' name='inning' ordinal='1' />
+              <column datatype='string' name='batting_team' ordinal='2' />
+              <column datatype='string' name='bowling_team' ordinal='3' />
+              <column datatype='integer' name='over' ordinal='4' />
+              <column datatype='integer' name='ball' ordinal='5' />
+              <column datatype='string' name='batsman' ordinal='6' />
+              <column datatype='string' name='non_striker' ordinal='7' />
+              <column datatype='string' name='bowler' ordinal='8' />
+              <column datatype='integer' name='is_super_over' ordinal='9' />
+              <column datatype='integer' name='wide_runs' ordinal='10' />
+              <column datatype='integer' name='bye_runs' ordinal='11' />
+              <column datatype='integer' name='legbye_runs' ordinal='12' />
+              <column datatype='integer' name='noball_runs' ordinal='13' />
+              <column datatype='integer' name='penalty_runs' ordinal='14' />
+              <column datatype='integer' name='batsman_runs' ordinal='15' />
+              <column datatype='integer' name='extra_runs' ordinal='16' />
+              <column datatype='integer' name='total_runs' ordinal='17' />
+              <column datatype='string' name='player_dismissed' ordinal='18' />
+              <column datatype='string' name='dismissal_kind' ordinal='19' />
+              <column datatype='string' name='fielder' ordinal='20' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team1]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>team1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team2]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>team2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_winner]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>toss_winner</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_decision]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>toss_decision</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[result]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>result</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dl_applied</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dl_applied]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>dl_applied</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_runs]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>win_by_runs</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_wickets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_wickets]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>win_by_wickets</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_of_match</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_of_match]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>player_of_match</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[venue]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>venue</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire1]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>umpire1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire2]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>umpire2</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire3]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>umpire3</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inning</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inning]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>inning</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batting_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batting_team]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batting_team</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowling_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowling_team]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bowling_team</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[over]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>over</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ball]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>ball</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batsman]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batsman</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_striker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[non_striker]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>non_striker</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowler]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bowler</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_super_over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_super_over]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>is_super_over</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wide_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wide_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>wide_runs</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bye_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bye_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bye_runs</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legbye_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[legbye_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>legbye_runs</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noball_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noball_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>noball_runs</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalty_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalty_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>penalty_runs</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[batsman_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batsman_runs</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extra_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extra_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>extra_runs</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_dismissed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_dismissed]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>player_dismissed</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dismissal_kind</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dismissal_kind]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>dismissal_kind</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fielder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fielder]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>fielder</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_B5041DE889EB423B931A8D740EC57494]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='deliveries.csv' datatype='table' name='[__tableau_internal_object_id__].[deliveries.csv_B5041DE889EB423B931A8D740EC57494]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='matches.csv' datatype='table' name='[__tableau_internal_object_id__].[matches.csv_9493DA5903EE485FB0C065FA1F83BEAE]' role='measure' type='quantitative' />
+      <column caption='Ball' datatype='integer' name='[ball]' role='measure' type='quantitative' />
+      <column caption='Batsman' datatype='string' name='[batsman]' role='dimension' type='nominal' />
+      <column caption='Batsman Runs' datatype='integer' name='[batsman_runs]' role='measure' type='quantitative' />
+      <column caption='Batting Team' datatype='string' name='[batting_team]' role='dimension' type='nominal' />
+      <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+      <column caption='Bowling Team' datatype='string' name='[bowling_team]' role='dimension' type='nominal' />
+      <column caption='Bye Runs' datatype='integer' name='[bye_runs]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Dismissal Kind' datatype='string' name='[dismissal_kind]' role='dimension' type='nominal' />
+      <column caption='Dl Applied' datatype='integer' name='[dl_applied]' role='measure' type='quantitative' />
+      <column caption='Extra Runs' datatype='integer' name='[extra_runs]' role='measure' type='quantitative' />
+      <column caption='Fielder' datatype='string' name='[fielder]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Inning' datatype='string' name='[inning]' role='dimension' type='nominal' />
+      <column caption='Is Super Over' datatype='integer' name='[is_super_over]' role='measure' type='quantitative' />
+      <column caption='Legbye Runs' datatype='integer' name='[legbye_runs]' role='measure' type='quantitative' />
+      <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+      <column caption='Noball Runs' datatype='integer' name='[noball_runs]' role='measure' type='quantitative' />
+      <column caption='Non Striker' datatype='string' name='[non_striker]' role='dimension' type='nominal' />
+      <column caption='Over' datatype='integer' name='[over]' role='measure' type='quantitative' />
+      <column caption='Penalty Runs' datatype='integer' name='[penalty_runs]' role='measure' type='quantitative' />
+      <column caption='Player Dismissed' datatype='string' name='[player_dismissed]' role='dimension' type='nominal' />
+      <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+      <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='string' default-role='measure' default-type='quantitative' name='[season]' role='dimension' type='nominal' />
+      <column caption='Team1' datatype='string' name='[team1]' role='dimension' type='nominal' />
+      <column caption='Team2' datatype='string' name='[team2]' role='dimension' type='nominal' />
+      <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+      <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <column caption='Umpire1' datatype='string' name='[umpire1]' role='dimension' type='nominal' />
+      <column caption='Umpire2' datatype='string' name='[umpire2]' role='dimension' type='nominal' />
+      <column caption='Umpire3' datatype='string' name='[umpire3]' role='dimension' type='nominal' />
+      <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+      <column caption='Wide Runs' datatype='integer' name='[wide_runs]' role='measure' type='quantitative' />
+      <column caption='Win By Runs' datatype='integer' name='[win_by_runs]' role='measure' type='quantitative' />
+      <column caption='Win By Wickets' datatype='integer' name='[win_by_wickets]' role='measure' type='quantitative' />
+      <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column-instance column='[batsman]' derivation='None' name='[none:batsman:nk]' pivot='key' type='nominal' />
+      <column-instance column='[bowler]' derivation='None' name='[none:bowler:nk]' pivot='key' type='nominal' />
+      <column-instance column='[dismissal_kind]' derivation='None' name='[none:dismissal_kind:nk]' pivot='key' type='nominal' />
+      <column-instance column='[team1]' derivation='None' name='[none:team1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='Quarter-Trunc' name='[tqr:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Inclusions (Winner,YEAR(Date))]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:winner:nk]' />
+          <groupfilter function='level-members' level='[tyr:date:qk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:winner:nk]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Rajasthan Royals&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;Delhi Capitals&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Chennai Super Kings&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Delhi Daredevils&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Kings XI Punjab&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Kolkata Knight Riders&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Mumbai Indians&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Royal Challengers Bangalore&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rising Pune Supergiant&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gujarat Lions&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Deccan Chargers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rising Pune Supergiants&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pune Warriors&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kochi Tuskers Kerala&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sunrisers Hyderabad&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tyr:date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>#2016-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2008-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2012-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2013-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2009-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2014-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2015-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2010-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2019-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2011-01-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tqr:date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>#2016-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2008-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2012-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2013-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2009-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2014-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2015-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2010-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2019-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2011-01-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:dismissal_kind:nk]' palette='cyclic_10_0' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#2fbaa9'>
+              <bucket>&quot;bowled&quot;</bucket>
+            </map>
+            <map to='#38a452'>
+              <bucket>&quot;caught&quot;</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>&quot;stumped&quot;</bucket>
+            </map>
+            <map to='#a76dc2'>
+              <bucket>&quot;run out&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;caught and bowled&quot;</bucket>
+            </map>
+            <map to='#e74b21'>
+              <bucket>&quot;lbw&quot;</bucket>
+            </map>
+            <map to='#f075b0'>
+              <bucket>&quot;retired hurt&quot;</bucket>
+            </map>
+            <map to='#f43c63'>
+              <bucket>&quot;obstructing the field&quot;</bucket>
+            </map>
+            <map to='#f8a61c'>
+              <bucket>&quot;hit wicket&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:batsman:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;A Hales&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;AC Blizzard&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ankit Soni&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;B Sumanth&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;C Nanda&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;D Shorey&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;DM Bravo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;GB Hogg&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HV Patel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;JA Morkel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;K Goel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;KMDN Kulasekara&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;M Ali&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MA Starc&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MN Samuels&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;ND Doshi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;P Shaw&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;R Dhawan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;RG Sharma&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;S Badree&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;S Singh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SE Bond&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SP Fleming&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;T Kohli&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;V Sehwag&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;YA Abdulla&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AA Jhunjhunwala&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AJ Tye&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Avesh Khan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BJ Hodge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CL White&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;DJ Hooda&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;E Lewis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;H Vihari&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;J Bairstow&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JJ van der Wath&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;KC Sangakkara&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LA Carseldine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;M Rawat&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MJ Guptill&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MS Gony&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;P Dogra&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PR Shah&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;R Vinay Kumar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RS Bopara&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;S Lamichhane&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SB Bangar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SC Ganguly&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SL Malinga&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sunny Gupta&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;U Kaul&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Washington Sundar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A Chopra&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AB de Villiers&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AN Ahmed&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;B Kumar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;C de Grandhomme&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CRD Fernando&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DJ Thornely&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;F du Plessis&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Harpreet Singh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;J Suchith&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;JP Duminy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;KK Cooper&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;LMP Simmons&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;M Vohra&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MK Tiwary&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;N Naik&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;P Parameswaran&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;R Ashwin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RD Chahar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RV Gomez&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;S Rana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SB Wagh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SMSM Senanayake&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SW Tait&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;UT Khawaja&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;X Thalaivan Sargunam&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A Mithun&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AD Mascarenhas&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AP Tare&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BAW Mendis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;CH Gayle&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DA Warner&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DPMD Jayawardene&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;GJ Bailey&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;IC Pandey&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JD Unadkat&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;K Upadhyay&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kuldeep Yadav&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;M Kartik&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MC Juneja&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mohammad Hafeez&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;NL McCullum&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Parvez Rasool&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;R Parag&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;RN ten Doeschate&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;S Dhawan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;S Tyagi&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Shivam Sharma&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SPD Smith&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;TD Paine&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;VR Aaron&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;YS Chahal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;A Joseph&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AC Gilchrist&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Anureet Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BA Bhatt&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CA Ingram&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;D Short&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;DNT Zoysa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;GC Smith&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;I Malhotra&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jaskaran Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;K Gowtham&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;KP Appanna&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;M Ashwin&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mandeep Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MN van Wyk&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Niraj Patel&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;PA Patel&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;R Dravid&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;RJ Harris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;S Badrinath&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;S Sohal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SE Marsh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SP Goswami&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;T Taibu&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;V Shankar&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yashpal Singh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A Choudhary&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AB Dinda&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AN Ghosh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;B Laughlin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;C Ingram&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;D du Preez&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DJG Sammy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;FH Edwards&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;HH Gibbs&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;J Syed Mohammad&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JP Faulkner&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;KK Nair&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LPC Silva&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;M Wood&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ML Hayden&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;N Pooran&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;P R Barman&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;R Bhatia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RE Levi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RV Uthappa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;S Randiv&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SK Trivedi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SN Khan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Swapnil Singh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;UT Yadav&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Y Gnaneswara Rao&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;A Uniyal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AA Bilakhia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AG Paunikar&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AT Rayudu&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bipul Sharma&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CK Kapugedera&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DJ Bravo&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DT Patil&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;H Gurney&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;J Archer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;JJ Bumrah&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;KB Arun Karthik&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;L Plunkett&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;M Muralitharan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Misbah-ul-Haq&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;MS Bisla&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;P Awana&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PP Chawla&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;R Singh&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;RR Rossouw&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;S Kaushik&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Salman Butt&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ST Jayasuriya&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;TR Birt&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;W Jaffer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A Ashish Reddy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AA Noffke&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AL Menaria&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Azhar Mahmood&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BJ Rohrer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CM Gautam&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;DJ Hussey&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;EJG Morgan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;H Viljoen&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;J Botha&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;JM Kemp&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;KD Karthik&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;LA Pomersbach&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;M Santner&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MJ Lumb&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MS Wade&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;P Krishna&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PSP Handscomb&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RA Jadeja&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RS Gavaskar&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;S Mavi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SB Jakati&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SM Harwood&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sunny Singh&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;UA Birla&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;WD Parnell&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;A Symonds&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AF Milne&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AS Raut&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BCJ Cutting&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CJ Jordan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DE Bollinger&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DS Lehmann&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;H Brar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;IR Jaggi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;JEC Franklin&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kamran Khan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;L Balaji&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;M Markande&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MF Maharoof&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MP Stoinis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;NV Ojha&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;PJ Sangwan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;R Sharma&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RR Powar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;S Hetmyer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SA Yadav&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SJ Srivastava&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SS Shaikh&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;TM Head&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;VVS Laxman&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A Dananjaya&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AB McDonald&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Anirudh Singh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;B Lee&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;C Madan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;D Kalyankrishna&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;DL Chahar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;FY Fazal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HH Pandya&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;J Theron&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;JR Hopes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;KL Rahul&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;LR Shukla&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MA Agarwal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MM Patel&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;N Rana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;P Raj&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;R Bhui&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RE van der Merwe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;S Anirudha&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;S Rutherford&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SD Chitnis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SN Thakur&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;T Curran&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Y Nagar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;A Mukund&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AD Mathews&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AR Bawne&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BB McCullum&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CH Morris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DAJ Bracewell&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DR Martyn&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;GJ Maxwell&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;IK Pathan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;JDP Oram&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;KA Pollard&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;KV Sharma&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;M Klinger&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MD Mishra&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mohammad Nabi&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;NLTC Perera&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PC Valthaty&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;R Rampaul&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;RP Singh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;S Dube&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;S Vidyut&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Shoaib Ahmed&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;STR Binny&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;TG Southee&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;VRV Singh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Yuvraj Singh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;A Nehra&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AD Nath&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AR Patel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BB Samantray&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CJ Anderson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DB Das&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DR Smith&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;GR Napier&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Imran Tahir&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;JDS Neesham&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;KAJ Roach&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;KW Richardson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;M Lomror&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MDKJ Perera&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mohammed Shami&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;NM Coulter-Nile&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;PD Collingwood&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;R Salam&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;RR Bhatkal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;S Gill&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SA Abbott&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Shoaib Akhtar&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SR Watson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;TL Suman&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VS Malik&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;YV Takawale&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;A Turner&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AG Murtaza&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AS Yadav&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BE Hendricks&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CJ McKay&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DH Yagnik&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DT Christian&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;H Das&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ishan Kishan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;JH Kallis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Karanveer Singh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;L Livingstone&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;M Morkel&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MG Johnson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MR Marsh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OA Shah&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PM Sarvesh Kumar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;R Shukla&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;RR Raje&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;S Kaul&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Sachin Baby&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SK Raina&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SS Tiwary&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;TM Srivastava&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;VY Mahesh&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;A Zampa&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;AA Chavan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;AJ Finch&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;AUK Pathan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BJ Haddin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;CK Langeveldt&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;DJ Harris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;DW Steyn&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;H Klaasen&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;J Arunkumar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;JJ Roy&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;KC Cariappa&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;L Ronchi&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;M Ntini&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MJ Clarke&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;P Chopra&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PP Ojha&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;R Tewatia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;RR Sarwan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;S Ladda&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sandeep Sharma&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SK Warne&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;TS Mills&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;WA Mota&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;A Kumble&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AC Thomas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AP Dole&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BA Stokes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CA Lynn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;D Wiese&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DP Nannes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;GD McGrath&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;I Sharma&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;JC Buttler&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;K Paul&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;KP Pietersen&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;M de Lange&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mashrafe Mortaza&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mohammad Ashraful&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NJ Maddinson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;PA Reddy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;R McLaren&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;RJ Peterson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;S Chanderpaul&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;S Sreesanth&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shahid Afridi&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SP Jackson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;T Thushara&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;V Kohli&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;VH Zol&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;YK Pathan&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;MS Dhoni&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A Flintoff&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Abdur Razzak&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ankit Sharma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;B Stanlake&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;C Munro&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;D Salunkhe&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DL Vettori&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;G Gambhir&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HM Amla&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;J Yadav&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;K Ahmed&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;KM Jadhav&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;LRPL Taylor&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MA Khote&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MM Sharma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;N Saini&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;P Sahu&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;R Bishnoi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;RG More&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;S Aravind&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;S Sharma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SD Lad&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sohail Tanvir&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;T Henderson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;V Pratap Singh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Y Venugopal Rao&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AB Agarkar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AM Nayar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;B Akhil&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BMAJ Mendis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CR Brathwaite&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;DJ Jacobs&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ER Dwivedi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Harbhajan Singh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;J Denly&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;JO Holder&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;KH Pandya&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LH Ferguson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M Ur Rahman&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MJ McClenaghan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mustafizur Rahman&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;P Kumar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;PV Tambe&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RA Tripathi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RS Sodhi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;S Nadeem&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SB Joshi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SM Katich&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SR Tendulkar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SV Samson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;UBT Chand&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;WP Saha&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;A Singh&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AD Russell&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AS Rajpoot&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BB Sran&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;CJ Ferguson&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DB Ravi Teja&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DS Kulkarni&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Gurkeerat Singh&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Iqbal Abdulla&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;JE Taylor&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kamran Akmal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;L Ablish&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;M Manhas&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MEK Hussey&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mohammed Siraj&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NS Naik&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;PJ Cummins&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;R Sathish&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RR Pant&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;S Gopal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SA Asnodkar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shoaib Malik&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SS Iyer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;TM Dilshan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VS Yeligati&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Z Khan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A Mishra&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AC Voges&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AP Majumdar&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Basil Thampi&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CA Pujara&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DA Miller&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DP Vijaykumar&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;GH Vihari&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;I Sodhi&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;JD Ryder&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;K Rabada&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;KS Williamson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;M Kaif&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MC Henriques&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mohammad Asif&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;NJ Rimmington&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pankaj Singh&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;R Ninan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;RJ Quiney&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;S Curran&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;S Sriram&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shakib Al Hasan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SP Narine&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TA Boult&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Vishnu Vinod&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Younis Khan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A Chandila&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AB Barath&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AM Rahane&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;B Chipli&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BR Dunk&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CR Woakes&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DJ Muthuswami&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;F Behardien&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Harmeet Singh&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;J Searles&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Joginder Sharma&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;KJ Abbott&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;LJ Wright&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;M Vijay&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MK Pandey&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MV Boucher&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;P Negi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Q de Kock&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Rashid Khan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RT Ponting&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;S Narwal&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SB Styris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SM Pollock&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SW Billings&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Umar Gul&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;WPUJC Vaas&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:team1:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Mumbai Indians&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chennai Super Kings&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gujarat Lions&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rising Pune Supergiants&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pune Warriors&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kings XI Punjab&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Deccan Chargers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kochi Tuskers Kerala&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Royal Challengers Bangalore&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sunrisers Hyderabad&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rajasthan Royals&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kolkata Knight Riders&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Delhi Capitals&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rising Pune Supergiant&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Delhi Daredevils&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:bowler:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;A Nehra&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;AF Milne&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;B Akhil&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;C Ganapathy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;DAJ Bracewell&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;FH Edwards&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;I Sharma&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;JDS Neesham&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;K Upadhyay&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;L Ngidi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;M Ur Rahman&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mohammad Nabi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;P Negi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;R Parag&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;RR Bose&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;S Narwal&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SD Chitnis&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SPD Smith&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TM Dilshan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Y Nagar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;A Ashish Reddy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AB McDonald&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Anureet Singh&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BCJ Cutting&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CR Woakes&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;DNT Zoysa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;H Vihari&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;J Syed Mohammad&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JW Hastings&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;KP Pietersen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;M Kartik&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MJ Henry&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;NL McCullum&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PP Chawla&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RE van der Merwe&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;S Kaul&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sachin Baby&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SL Malinga&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;T Henderson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;VS Malik&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A Joseph&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AC Voges&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AS Raut&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BJ Rohrer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;D Salunkhe&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DS Kulkarni&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Harmeet Singh (2)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jaskaran Singh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;K Khejroliya&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;KW Richardson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;M Morkel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MM Sharma&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;P Amarnath&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;R Bhatia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RJ Peterson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;S Lamichhane&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SB Joshi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SMSM Senanayake&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;TA Boult&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Washington Sundar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A Uniyal&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AL Menaria&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;B Laughlin&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;CH Morris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DJ Harris&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;GD McGrath&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Imran Tahir&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JJ Bumrah&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Karanveer Singh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;LJ Wright&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MA Starc&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MR Marsh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;P Suyal&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;R Shukla&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;RS Gavaskar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;S Sharma&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Shivam Sharma&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SS Mundhe&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Umar Gul&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;YS Chahal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;A Nel&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AG Murtaza&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;B Chipli&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;C Munro&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;DB Ravi Teja&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;FY Fazal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;I Sodhi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;JE Taylor&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;KA Pollard&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;L Plunkett&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;M Vijay&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mohammed Shami&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;P Parameswaran&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;R Rampaul&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;RR Powar&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;S Rana&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SE Bond&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SR Tendulkar&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TM Head&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Y Venugopal Rao&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A Kumble&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AD Mascarenhas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AUK Pathan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BMAJ Mendis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;D Short&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DT Christian&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;HH Pandya&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JD Ryder&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;K Paul&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;L Ablish&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;M Muralitharan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MN Samuels&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;P Awana&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;R Dhawan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RN ten Doeschate&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;S Mavi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SB Styris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SN Thakur&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tejas Baroka&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;WD Parnell&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AB Agarkar&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ankit Sharma&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BAW Mendis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CL White&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DL Chahar&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;H Brar&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;J Searles&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;JP Faulkner&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;KMDN Kulasekara&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;M Ashwin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;MG Neser&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ND Doshi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PJ Sangwan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rashid Khan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;S Dhawan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SA Abbott&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SK Trivedi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Swapnil Singh&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;VR Aaron&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A Chandila&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Abdur Razzak&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AP Dole&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BE Hendricks&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CRD Fernando&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;DP Nannes&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;H Viljoen&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;J Theron&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;K Ahmed&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;KS Williamson&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;M Lomror&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MJ McClenaghan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;NLTC Perera&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PP Ojha&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RG More&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;S Kaushik&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sandeep Sharma&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SM Boland&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;T Natarajan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;VS Yeligati&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AA Kazi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AN Ahmed&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BA Stokes&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CK Kapugedera&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DJ Thornely&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;GS Sandhu&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;J Botha&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Joginder Sharma&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;KK Cooper&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;LRPL Taylor&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MF Maharoof&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;N Saini&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;PD Collingwood&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RA Shaikh&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;S Badree&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;S Vidyut&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SJ Srivastava&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sunny Gupta&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;V Sehwag&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A Mishra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AD Mathews&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Avesh Khan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BW Hilfenhaus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;D Wiese&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;DW Steyn&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HV Patel&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;JD Unadkat&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;K Rabada&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;L Balaji&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;M Ntini&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mohammad Asif&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;P Krishna&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;R McLaren&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RP Singh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;S Midhun&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SB Wagh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sohail Tanvir&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;TG Southee&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;WPUJC Vaas&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;A Zampa&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AM Nayar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;B Lee&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CJ Anderson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DJ Hooda&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;GH Vihari&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Iqbal Abdulla&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;JJ van der Wath&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;KC Cariappa&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LMP Simmons&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mashrafe Mortaza&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MS Gony&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pankaj Singh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;R Tewatia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;RV Gomez&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;S Sreesanth&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Shoaib Ahmed&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SS Sarkar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UT Yadav&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Yuvraj Singh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AA Chavan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AM Rahane&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;B Stanlake&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CJ Jordan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DJ Hussey&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;GJ Maxwell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;J Archer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;JM Kemp&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;KH Pandya&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LPC Silva&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MB Parmar&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mustafizur Rahman&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Parvez Rasool&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;R Vinay Kumar&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;RW Price&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;S Sriram&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Shoaib Akhtar&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;ST Jayasuriya&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;V Kohli&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Z Khan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AA Noffke&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Anand Rajan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Basil Thampi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CK Langeveldt&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DJG Sammy&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gurkeerat Singh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;J Dala&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;JP Duminy&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;KM Asif&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;M Ali&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MG Johnson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;NB Singh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PJ Cummins&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;RA Tripathi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;S Curran&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;S Warrier&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SK Raina&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SW Tait&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;V Shankar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;AB Dinda&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ankit Soni&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BB Sran&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;CR Brathwaite&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;DL Vettori&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;H Gurney&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;J Suchith&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;JR Hopes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;KP Appanna&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;M de Lange&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MJ Clarke&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;NJ Rimmington&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PM Sarvesh Kumar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;RD Chahar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;S Gopal&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SA Yadav&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SK Warne&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;T Curran&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;VRV Singh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;A Singh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AJ Finch&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;B Geeves&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;C Nanda&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DE Bollinger&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gagandeep Singh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;IC Pandey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;JEC Franklin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;KAJ Roach&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LA Carseldine&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;M Wood&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mohammed Siraj&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;P Prasanth&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;R Sathish&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;RR Raje&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;S Randiv&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shahid Afridi&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SR Watson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TP Sudhindra&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;YA Abdulla&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A Mithun&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;AD Russell&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Azhar Mahmood&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;C de Grandhomme&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;D Willey&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;F du Plessis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;I Malhotra&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;JDP Oram&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;K Santokie&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;L Ferguson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;M Santner&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mohammad Hafeez&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;P Kumar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;R Ninan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;RR Bhatkal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;S Nadeem&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SC Ganguly&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SP Narine&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;TL Suman&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Y Gnaneswara Rao&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A Choudhary&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AC Gilchrist&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AR Patel&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bipul Sharma&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;D du Preez&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;DP Vijaykumar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Harbhajan Singh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;J Yadav&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;K Goel&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kuldeep Yadav&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M Manhas&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MK Tiwary&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NM Coulter-Nile&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;PV Tambe&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RG Sharma&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;S Kuggeleijn&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SB Bangar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SM Harwood&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;T Shamsi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;VY Mahesh&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AA Jhunjhunwala&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AM Salvi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BA Bhatt&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;CJ McKay&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DJ Muthuswami&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;GR Napier&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;J Behrendorff&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;JO Holder&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;KJ Abbott&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;LR Shukla&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MC Henriques&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;N Rana&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;PC Valthaty&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RA Jadeja&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;S Aravind&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;S Tyagi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shoaib Malik&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;STR Binny&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;V Pratap Singh&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A Symonds&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AJ Tye&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;B Kumar&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CH Gayle&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DJ Bravo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;GB Hogg&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;IK Pathan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;JH Kallis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kamran Khan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;LH Ferguson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MA Khote&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MP Stoinis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;P Sahu&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;R Sharma&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;RS Bopara&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;S Rutherford&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shakib Al Hasan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SS Agarwal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TS Mills&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;YK Pathan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A Flintoff&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AC Thomas&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AS Rajpoot&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BJ Hodge&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;D Kalyankrishna&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DR Smith&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Harmeet Singh&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;JA Morkel&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;K Gowtham&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;KV Sharma&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;M Markande&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MM Patel&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;O Thomas&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;R Ashwin&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RJ Harris&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;S Ladda&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SB Jakati&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SM Pollock&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;T Thushara&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;WA Mota&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='deliveries.csv' id='deliveries.csv_B5041DE889EB423B931A8D740EC57494'>
+            <properties context=''>
+              <relation connection='textscan.1vfqz2j0apqv3b1ga4aev0idpulb' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='match_id' ordinal='0' />
+                  <column datatype='string' name='inning' ordinal='1' />
+                  <column datatype='string' name='batting_team' ordinal='2' />
+                  <column datatype='string' name='bowling_team' ordinal='3' />
+                  <column datatype='integer' name='over' ordinal='4' />
+                  <column datatype='integer' name='ball' ordinal='5' />
+                  <column datatype='string' name='batsman' ordinal='6' />
+                  <column datatype='string' name='non_striker' ordinal='7' />
+                  <column datatype='string' name='bowler' ordinal='8' />
+                  <column datatype='integer' name='is_super_over' ordinal='9' />
+                  <column datatype='integer' name='wide_runs' ordinal='10' />
+                  <column datatype='integer' name='bye_runs' ordinal='11' />
+                  <column datatype='integer' name='legbye_runs' ordinal='12' />
+                  <column datatype='integer' name='noball_runs' ordinal='13' />
+                  <column datatype='integer' name='penalty_runs' ordinal='14' />
+                  <column datatype='integer' name='batsman_runs' ordinal='15' />
+                  <column datatype='integer' name='extra_runs' ordinal='16' />
+                  <column datatype='integer' name='total_runs' ordinal='17' />
+                  <column datatype='string' name='player_dismissed' ordinal='18' />
+                  <column datatype='string' name='dismissal_kind' ordinal='19' />
+                  <column datatype='string' name='fielder' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='matches.csv' id='matches.csv_9493DA5903EE485FB0C065FA1F83BEAE'>
+            <properties context=''>
+              <relation connection='textscan.1vfqz2j0apqv3b1ga4aev0idpulb' name='matches.csv' table='[matches#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='season' ordinal='1' />
+                  <column datatype='string' name='city' ordinal='2' />
+                  <column datatype='date' date-parse-format='MM/dd/yyyy|#|#|dd/yy/MMMMHH' name='date' ordinal='3' />
+                  <column datatype='string' name='team1' ordinal='4' />
+                  <column datatype='string' name='team2' ordinal='5' />
+                  <column datatype='string' name='toss_winner' ordinal='6' />
+                  <column datatype='string' name='toss_decision' ordinal='7' />
+                  <column datatype='string' name='result' ordinal='8' />
+                  <column datatype='integer' name='dl_applied' ordinal='9' />
+                  <column datatype='string' name='winner' ordinal='10' />
+                  <column datatype='integer' name='win_by_runs' ordinal='11' />
+                  <column datatype='integer' name='win_by_wickets' ordinal='12' />
+                  <column datatype='string' name='player_of_match' ordinal='13' />
+                  <column datatype='string' name='venue' ordinal='14' />
+                  <column datatype='string' name='umpire1' ordinal='15' />
+                  <column datatype='string' name='umpire2' ordinal='16' />
+                  <column datatype='string' name='umpire3' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[match_id]' />
+            </expression>
+            <first-end-point object-id='matches.csv_9493DA5903EE485FB0C065FA1F83BEAE' />
+            <second-end-point object-id='deliveries.csv_B5041DE889EB423B931A8D740EC57494' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Best Performing Team Throughout the Years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[Inclusions (Winner,YEAR(Date))]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:winner:nk]' member='&quot;Chennai Super Kings&quot;' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2011-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2015-01-01 00:00:00#' />
+                </groupfilter>
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:winner:nk]' member='&quot;Delhi Daredevils&quot;' />
+                <groupfilter function='member' level='[tyr:date:qk]' member='#2009-01-01 00:00:00#' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:winner:nk]' member='&quot;Kings XI Punjab&quot;' />
+                <groupfilter function='member' level='[tyr:date:qk]' member='#2014-01-01 00:00:00#' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:winner:nk]' member='&quot;Kolkata Knight Riders&quot;' />
+                <groupfilter function='member' level='[tyr:date:qk]' member='#2012-01-01 00:00:00#' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:winner:nk]' member='&quot;Mumbai Indians&quot;' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2010-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2013-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2017-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2019-01-01 00:00:00#' />
+                </groupfilter>
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:winner:nk]' member='&quot;Rajasthan Royals&quot;' />
+                <groupfilter function='member' level='[tyr:date:qk]' member='#2008-01-01 00:00:00#' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:winner:nk]' member='&quot;Sunrisers Hyderabad&quot;' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2016-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[tyr:date:qk]' member='#2018-01-01 00:00:00#' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:winner:nk]'>
+            <groupfilter function='level-members' level='[none:winner:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok]' direction='ASC' />
+          <filter class='quantitative' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]'>
+            <groupfilter from='2008' function='range' level='[yr:date:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:winner:nk]</column>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</column>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:qk]</column>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[Inclusions (Winner,YEAR(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok]' value='69' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[cnt:winner:qk]</rows>
+        <cols>([federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:winner:nk] / [federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok])</cols>
+      </table>
+      <simple-id uuid='{70EA9595-ED1C-442B-89D7-96750FE6CC3A}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Season-wise Average Runs per Ball in each innings</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column-instance column='[total_runs]' derivation='Avg' name='[avg:total_runs:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Inning' datatype='string' name='[inning]' role='dimension' type='nominal' />
+            <column-instance column='[inning]' derivation='None' name='[none:inning:nk]' pivot='key' type='nominal' />
+            <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:inning:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:inning:nk]' member='&quot;1&quot;' />
+              <groupfilter function='member' level='[none:inning:nk]' member='&quot;2&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:date:ok]' member='2008' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2009' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2013' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2014' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2015' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2016' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2017' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2019' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:inning:nk]</column>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:inning:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[avg:total_runs:qk]</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{4751C43E-BB4E-4674-91FC-120E16C07D44}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Type of Dismissal Throughout the Years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column-instance column='[dismissal_kind]' derivation='Count' name='[cnt:dismissal_kind:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Dismissal Kind' datatype='string' name='[dismissal_kind]' role='dimension' type='nominal' />
+            <column-instance column='[dismissal_kind]' derivation='None' name='[none:dismissal_kind:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]'>
+            <groupfilter from='2008' function='range' level='[yr:date:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:dismissal_kind:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[cnt:dismissal_kind:qk]</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{F4E40367-6D44-4C97-A6A3-AAD9B6F0580F}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Runs Scored Per Season or Per team per season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[team1]' derivation='None' name='[none:team1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_runs]' derivation='Sum' name='[sum:total_runs:qk]' pivot='key' type='quantitative' />
+            <column caption='Team1' datatype='string' name='[team1]' role='dimension' type='nominal' />
+            <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:team1:nk]'>
+            <groupfilter function='level-members' level='[none:team1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]'>
+            <groupfilter from='2008' function='range' level='[yr:date:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</column>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:team1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:team1:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[sum:total_runs:qk]</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:qk]</cols>
+      </table>
+      <simple-id uuid='{0DDF2C80-9731-44E3-A802-5114B2C706E0}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Strike Rate for Batsman</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column caption='AVG([Batsman Runs])*100' datatype='real' name='[Calculation_200691704519917570]' role='measure' type='quantitative' user:unnamed='Sheet 5'>
+              <calculation class='tableau' formula='AVG([batsman_runs])*100' />
+            </column>
+            <column caption='Batsman' datatype='string' name='[batsman]' role='dimension' type='nominal' />
+            <column caption='Batsman Runs' datatype='integer' name='[batsman_runs]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[batsman]' derivation='None' name='[none:batsman:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_runs]' derivation='Sum' name='[sum:total_runs:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_200691704519917570]' derivation='User' name='[usr:Calculation_200691704519917570:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:batsman:nk]'>
+            <groupfilter function='level-members' level='[none:batsman:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok]'>
+            <groupfilter function='level-members' level='[tyr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:batsman:nk]</column>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[usr:Calculation_200691704519917570:qk]' scope='cols' value='Strike Rate' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:batsman:nk]' />
+              <lod column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:batsman:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[sum:total_runs:qk]</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[usr:Calculation_200691704519917570:qk]</cols>
+      </table>
+      <simple-id uuid='{C5C197A5-EADB-449F-B429-F9C0563A5DE2}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Economy rate of Bowler throughout years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column caption='SUM([Total Runs])/(COUNT([Ball])/6)' datatype='real' name='[Calculation_200691704522264580]' role='measure' type='quantitative' user:unnamed='Sheet 6'>
+              <calculation class='tableau' formula='SUM([total_runs])/(COUNT([ball])/6)' />
+            </column>
+            <column caption='Ball' datatype='integer' name='[ball]' role='measure' type='quantitative' />
+            <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[bowler]' derivation='None' name='[none:bowler:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_runs]' derivation='Sum' name='[sum:total_runs:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_200691704522264580]' derivation='User' name='[usr:Calculation_200691704522264580:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:bowler:nk]'>
+            <groupfilter function='level-members' level='[none:bowler:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]'>
+            <groupfilter from='2008' function='range' level='[yr:date:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</column>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:bowler:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[usr:Calculation_200691704522264580:qk]' scope='cols' value='Economy Rate' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:bowler:nk]' />
+              <lod column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[sum:total_runs:qk]</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[usr:Calculation_200691704522264580:qk]</cols>
+      </table>
+      <simple-id uuid='{3EF5A799-D896-45B5-B54E-A9688E5BA85C}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Toss Decisions Throughout Seasons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column-instance column='[toss_winner]' derivation='Count' name='[cnt:toss_winner:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[toss_decision]' derivation='None' name='[none:toss_decision:nk]' pivot='key' type='nominal' />
+            <column-instance column='[toss_winner]' derivation='None' name='[none:toss_winner:nk]' pivot='key' type='nominal' />
+            <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+            <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]'>
+            <groupfilter from='2008' function='range' level='[yr:date:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_decision:nk]' value='10' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_decision:nk]' value='206' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_winner:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok] * [federated.08p3vst1htfjn81clsi7s0x9ne8n].[cnt:toss_winner:qk])</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_decision:nk]</cols>
+      </table>
+      <simple-id uuid='{2D191452-DA37-4CD1-B930-E27067DE5039}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column-instance column='[toss_winner]' derivation='Count' name='[cnt:toss_winner:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[toss_decision]' derivation='None' name='[none:toss_decision:nk]' pivot='key' type='nominal' />
+            <column-instance column='[venue]' derivation='None' name='[none:venue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+            <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+            <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:winner:nk]'>
+            <groupfilter from='&quot;Chennai Super Kings&quot;' function='range' level='[none:winner:nk]' to='&quot;Sunrisers Hyderabad&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:winner:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_decision:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[cnt:toss_winner:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_decision:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[cnt:winner:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_decision:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.08p3vst1htfjn81clsi7s0x9ne8n].[cnt:toss_winner:qk] + [federated.08p3vst1htfjn81clsi7s0x9ne8n].[cnt:winner:qk])</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:venue:nk]</cols>
+      </table>
+      <simple-id uuid='{2C345619-0E28-411A-8247-D5331BA4F0FC}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.08p3vst1htfjn81clsi7s0x9ne8n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08p3vst1htfjn81clsi7s0x9ne8n'>
+            <column caption='[Winner]/COUNT([Winner])*100' datatype='real' name='[Calculation_200691704854458373]' role='measure' type='quantitative' user:unnamed='Sheet 9'>
+              <calculation class='tableau' formula='[winner]/COUNT([winner])*100' />
+            </column>
+            <column-instance column='[total_runs]' derivation='Avg' name='[avg:total_runs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_200691704854458373]' derivation='None' name='[none:Calculation_200691704854458373:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:Calculation_200691704854458373:qk]</rows>
+        <cols>[federated.08p3vst1htfjn81clsi7s0x9ne8n].[avg:total_runs:qk]</cols>
+      </table>
+      <simple-id uuid='{AF29076C-4898-409B-8800-C935B6AD6165}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:winner:nk]' type='filter' />
+            <card param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C0BD97DB-BCB0-401B-A991-72C5675EAD06}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:inning:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{35626BA0-B72E-4B62-86D8-7C7AE7B1E968}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:dismissal_kind:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1BF98EC-9FA0-4CA3-A0E5-08F9ACA2B968}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:team1:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{16827FF6-73C3-4E69-AB11-9075616AA9A3}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[tyr:date:ok]' type='filter' />
+            <card mode='typeinlist' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:batsman:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:batsman:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9498D753-CC8D-42F8-8133-9F6FA80EE948}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[yr:date:ok]' type='filter' />
+            <card mode='typeinlist' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:bowler:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:bowler:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{765775C8-7625-419F-839A-1A00876A446D}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_winner:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C644A5DB-4B73-4D56-9105-F60C46D817B2}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.08p3vst1htfjn81clsi7s0x9ne8n].[none:toss_decision:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A2722680-7844-440D-A293-80986F906356}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB433461-C1EC-404B-AAC2-533B533932C4}' />
+    </window>
+  </windows>
+</workbook>
